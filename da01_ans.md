@@ -28,6 +28,7 @@ b is:
 #### e)
 "3 3"
 
+
 ### 2)
 ```python
 x = 2
@@ -41,4 +42,30 @@ while x <= 15:
 print("the sum is: ", sum(a))
 ```
 
+
 ### 3)
+```python
+def pickWord(string):
+    head = string[0]
+    newstring = string[1:] + string[0] + "ay"
+    return newstring
+
+def main():
+    s = input("Enter a string: ")
+    print(newstring(s))
+```
+
+
+### 4)
+```python
+a = int(input("enter triangle side 1: "))
+b = int(input("enter triangle side 2: "))
+c = int(input("enter triangle side 3: "))
+
+if a + b < c or a + c < b or b + c < a:
+    print("no")
+else:
+    print("yes")
+```
+
+### 5)
