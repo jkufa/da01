@@ -1,4 +1,8 @@
-#def alDiff():
-
-    def altDef(|17, 5, 8,10])=17-(5-(8-10))=17-(5-(-2))=17-7=10; 
-    #altDiff([6, 8,7])= 6 - (8 - 7) = 5- 1 = 2; altDiff([4, 5]) = 4-5 = -1.
+def altDef(xs):
+    result = xs[-1]
+    xs = xs[:-1]
+    xs.reverse()
+    for x in xs:
+        result = x - result
+    return result
+print(altDef([17,5,8,10]))
