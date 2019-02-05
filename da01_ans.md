@@ -2,7 +2,7 @@
 ## Jack Kufa
 
 
-### 1. Simple questions about Python.
+### 1.
 #### a)
 1. H
 2. 0
@@ -20,16 +20,15 @@
 xx xxxx yy yyyyy
 
 #### d)
-a is:
-`['Good', 2, 7]`
-b is:
-`[['Good', 2, 7], ['Good', 2, 7]]`
+a is: `['Good', 2, 7]`
+
+b is:`[['Good', 2, 7], ['Good', 2, 7]]`
 
 #### e)
 "3 3"
 
 
-### 2)
+### 2.
 ```python
 x = 2
 y = 1/x
@@ -42,30 +41,50 @@ while x <= 15:
 print("the sum is: ", sum(a))
 ```
 
-
-### 3)
+### 3.
 ```python
 def pickWord(string):
-    head = string[0]
     newstring = string[1:] + string[0] + "ay"
     return newstring
-
-def main():
-    s = input("Enter a string: ")
-    print(newstring(s))
 ```
 
+### 4.
 
-### 4)
+#### a)
 ```python
-a = int(input("enter triangle side 1: "))
-b = int(input("enter triangle side 2: "))
-c = int(input("enter triangle side 3: "))
+def isTriangle(a, b, c):
+    if (a + b) < c or (a + c) < b or (b + c) < a:
+        print("no")
+    else:
+        print("yes")
+```
+#### b)
+```python
+def isTriangle(a, b, c):
+    if (a + b) < c or (a + c) < b or (b + c) < a:
+        print("no")
+    else:
+        print("yes")
 
-if a + b < c or a + c < b or b + c < a:
-    print("no")
-else:
-    print("yes")
+def stickInput():
+    a = int(input("enter triangle side 1: "))
+    b = int(input("enter triangle side 2: "))
+    c = int(input("enter triangle side 3: "))
+    isTriangle(a, b, c)
 ```
 
-### 5)
+
+### 5.
+```python
+def isTriangle(a, b, c):
+    if (a + b) < c or (a + c) < b or (b + c) < a:
+        print("no")
+    else:
+        print("yes")
+
+def stickInput():
+    a = int(input("enter triangle side 1: "))
+    b = int(input("enter triangle side 2: "))
+    c = int(input("enter triangle side 3: "))
+    isTriangle(a, b, c)
+```
